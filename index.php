@@ -468,7 +468,7 @@
                 <div class="social-links">
                     kuomatpelaa at gmail dot com
                 </div>
-                <p>&copy; 2025 My Awesome Podcast. All Rights Reserved.</p>
+                <p>&copy; 2025 Kuomat Pelaa Podcast. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
