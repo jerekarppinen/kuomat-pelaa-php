@@ -352,11 +352,11 @@
             
             if (isExpanded) {
                 // Show truncated version
-                description.innerHTML = description.getAttribute('data-truncated');
+                description.textContent = description.getAttribute('data-truncated');
                 description.setAttribute('data-expanded', 'false');
                 button.textContent = 'Näytä loput';
             } else {
-                // Show full version
+                // Show full version (as HTML)
                 description.innerHTML = description.getAttribute('data-full');
                 description.setAttribute('data-expanded', 'true');
                 button.textContent = 'Näytä vähemmän';
@@ -383,12 +383,12 @@
                     <div class="host-card">
                         <img src="harri.jpeg" alt="Host 1" class="host-image" />
                         <h3 class="host-name">Harri Lappalainen</h3>
-                        <p class="host-bio">Harri on lupsakka savolainen, joka nautiskelee erityisesti vuoropohjaisista roolipeleistä, taistelupeleistä ja roguelikeistä. Kaikenlainen retro toimii myös, ja Harrilta löytyykin useampi vanhempi pelikonsoli joiden antia hän saattaa välillä esitellä. Hän pelaa Nintendo Switchillä, PS5:lla ja nuhapumppu PC:llä.</p>
+                        <p class="host-bio">RPG-velho.</p>
                     </div>
                     <div class="host-card">
                         <img src="jere.jpeg" alt="Host 2" class="host-image" />
                         <h3 class="host-name">Jere Karppinen</h3>
-                        <p class="host-bio">Jere on vitsiä murjova pohjoiskarjalainen, joka aloitti seikkailupelien koluamisen jo hyvin nuorella iällä ja on edelleen sillä tiellä. Hän on valmis kuitenkin kokeilemaan monenlaisia pelejä ja saattaa joskus yllättää sillä, mitä jaksoon tuo! Jere käyttää pelaamiseen PC:tä, PS5 ja Steam Deckiä.</p>
+                        <p class="host-bio">Point and click -paroni.</p>
                     </div>
                 </div>
             </div>
@@ -432,10 +432,10 @@
                                     class="episode-description" 
                                     id="desc-<?php echo htmlspecialchars($episode->guid); ?>"
                                     data-expanded="false"
-                                    data-truncated="<p><?php echo htmlspecialchars($truncatedDesc); ?></p>"
-                                    data-full="<?php echo $episode->description; ?>"
+                                    data-truncated="<?php echo htmlspecialchars($truncatedDesc); ?>"
+                                    data-full="<?php echo htmlspecialchars($episode->description); ?>"
                                 >
-                                    <p><?php echo htmlspecialchars($truncatedDesc); ?></p>
+                                    <?php echo htmlspecialchars($truncatedDesc); ?>
                                 </div>
                                 <div class="episode-actions">
                                     <a 
