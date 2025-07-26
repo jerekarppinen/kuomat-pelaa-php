@@ -6,6 +6,7 @@ COPY index.php /var/www/html/
 # Copy image files
 COPY *.jpeg /var/www/html/
 COPY *.jpg /var/www/html/
+COPY *.css /var/www/html/
 
 # Expose port 80
 EXPOSE 80
