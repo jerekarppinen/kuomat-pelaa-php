@@ -168,6 +168,7 @@
 
         .episode-description {
             color: #555;
+            word-wrap: break-word;
         }
 
         .episode-actions {
