@@ -139,7 +139,7 @@
             </div>
         </section>
 
-        <!-- <div class="search-container">
+        <div class="search-container">
             <div class="container">
                 <form class="search-form" action="#" method="get">
                     <input 
@@ -151,7 +151,7 @@
                     />
                 </form>
             </div>
-        </div> -->
+        </div>
 
         <section class="episodes-section">
             <div class="container">
@@ -217,5 +217,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script> 
 </body>
 </html>
