@@ -6,6 +6,7 @@
     <title>Kuomat Pelaa - Podcast</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9d33c68b-825b-4f14-835b-c53e631c5cd6"></script>
 </head>
 <body>
     <?php
