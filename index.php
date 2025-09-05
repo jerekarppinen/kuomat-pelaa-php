@@ -8,7 +8,7 @@
     <meta name="keywords" content="Kuomat Pelaa, videopelipodcast, suomalainen podcast, pelipodcast, PlayStation, PC, Switch, Steam Deck">
     <meta name="author" content="Kuomat Pelaa Podcast">
     <meta property="og:title" content="Kuomat Pelaa - Suomalainen videopelipodcast">
-    <meta property="og:description" content="Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat. Kuuntele uusimmat jaksot Kuomat Pelaa -podcastissa.">
+    <meta property="og:description" content="Harri ja Jere keskustelevat peleistä, joita he tykkäävät pelata. Kuuntele uusimmat jaksot Kuomat Pelaa -podcastissa.">
     <meta property="og:image" content="https://www.kuomatpelaa.com/logo.jpg">
     <meta property="og:url" content="https://www.kuomatpelaa.com/">
     <meta property="og:site_name" content="Kuomat Pelaa Podcast">
