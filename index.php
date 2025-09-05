@@ -29,7 +29,7 @@
     "@context": "https://schema.org",
     "@type": "PodcastSeries",
     "name": "Kuomat Pelaa",
-    "description": "Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat.",
+    "description": "Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he tykkäävät pelata.",
     "url": "https://www.kuomatpelaa.com/",
     "image": "https://www.kuomatpelaa.com/logo.jpg",
     "author": {
