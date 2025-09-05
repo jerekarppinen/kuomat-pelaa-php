@@ -2,11 +2,47 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat. Kuuntele uusimmat jaksot täältä.">
+    <meta name="keywords" content="Kuomat Pelaa, videopelipodcast, suomalainen podcast, pelipodcast, PlayStation, PC, Switch, Steam Deck">
+    <meta name="author" content="Kuomat Pelaa Podcast">
+    <meta property="og:title" content="Kuomat Pelaa - Suomalainen videopelipodcast">
+    <meta property="og:description" content="Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat. Kuuntele uusimmat jaksot Kuomat Pelaa -podcastissa.">
+    <meta property="og:image" content="https://www.kuomatpelaa.com/logo.jpg">
+    <meta property="og:url" content="https://www.kuomatpelaa.com/">
+    <meta property="og:site_name" content="Kuomat Pelaa Podcast">
+    <meta property="og:locale" content="fi_FI">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kuomat Pelaa - Podcast">
+    <meta name="twitter:description" content="Suomalainen pelipodcast – Harri ja Jere pelaavat ja keskustelevat.">
+    <meta name="twitter:image" content="https://www.kuomatpelaa.com/logo.jpg">
+    <link rel="canonical" href="https://www.kuomatpelaa.com/">
+    <link rel="alternate" type="application/rss+xml" title="Kuomat Pelaa Podcast RSS" href="https://anchor.fm/s/e698ed4c/podcast/rss">
     <title>Kuomat Pelaa - Podcast</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="9d33c68b-825b-4f14-835b-c53e631c5cd6"></script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Kuomat Pelaa",
+    "description": "Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat.",
+    "url": "https://www.kuomatpelaa.com/",
+    "image": "https://www.kuomatpelaa.com/logo.jpg",
+    "author": {
+        "@type": "Person",
+        "name": ["Harri Lappalainen", "Jere Karppinen"]
+    },
+    "sameAs": [
+        "https://www.instagram.com/kuomatpelaa/",
+        "https://open.spotify.com/show/yourSpotifyShowID",
+        "https://podcasts.apple.com/fi/podcast/kuomat-pelaa/idYOURAPPLEID"
+        ]
+    }
+    </script>
 </head>
 <body>
     <?php
