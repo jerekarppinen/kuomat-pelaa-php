@@ -251,6 +251,7 @@
                     kuomatpelaa at gmail dot com
                 </div>
                 <p>&copy; 2025 Kuomat Pelaa Podcast. All Rights Reserved.</p>
+                <p><a href="/tietosuojaseloste.html">Tietosuojaseloste</a></p>
             </div>
         </footer>
     </div>
