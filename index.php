@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he oikeasti pelaavat. Kuuntele uusimmat jaksot täältä.">
+    <meta name="description" content="Kuomat Pelaa on rento suomalainen videopelipodcast. Harri ja Jere keskustelevat peleistä, joita he tykkäävät pelata. Kuuntele uusimmat jaksot täältä.">
     <meta name="keywords" content="Kuomat Pelaa, videopelipodcast, suomalainen podcast, pelipodcast, PlayStation, PC, Switch, Steam Deck">
     <meta name="author" content="Kuomat Pelaa Podcast">
     <meta property="og:title" content="Kuomat Pelaa - Suomalainen videopelipodcast">
