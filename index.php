@@ -87,6 +87,11 @@
             $episode->pub_date = (string)$item->pubDate;
             $episode->link = (string)$item->link;
             $episode->guid = (string)$item->guid;
+
+            // iTunes-namespace kesto
+            $itunes = $item->children('http://www.itunes.com/dtds/podcast-1.0.dtd');
+            $episode->duration = isset($itunes->duration) ? (string)$itunes->duration : null;
+
             return $episode;
         }
     }
@@ -102,6 +107,26 @@
         return strlen($textContent) > $limit 
             ? substr($textContent, 0, $limit) . '...'
             : $textContent;
+    }
+
+    function formatDuration($duration) {
+        if (!$duration) return null;
+        // Kesto voi olla "HH:MM:SS", "MM:SS" tai pelkkä sekuntimäärä
+        if (is_numeric($duration)) {
+            $h = floor($duration / 3600);
+            $m = floor(($duration % 3600) / 60);
+            return $h > 0 ? "{$h}t {$m}min" : "{$m}min";
+        }
+        $parts = explode(':', $duration);
+        if (count($parts) === 3) {
+            $h = (int)$parts[0];
+            $m = (int)$parts[1];
+            return $h > 0 ? "{$h}t {$m}min" : "{$m}min";
+        }
+        if (count($parts) === 2) {
+            return ((int)$parts[0]) . "min";
+        }
+        return $duration;
     }
 
     // Fetch episodes
@@ -208,6 +233,9 @@
                                 <div class="episode-info">
                                     <span class="episode-number"><?php echo htmlspecialchars($episode->episode_number); ?>.</span>
                                     <span class="episode-date"><?php echo formatDate($episode->pub_date); ?></span>
+                                    <?php if ($episode->duration): ?>
+                                        <span class="episode-duration"><?php echo formatDuration($episode->duration); ?></span>
+                                    <?php endif; ?>
                                 </div>
                                 <h3 class="episode-title"><?php echo htmlspecialchars($episode->title); ?></h3>
                                 <div 

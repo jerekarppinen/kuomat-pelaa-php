@@ -188,6 +188,16 @@
             align-items: center;
         }
 
+        .episode-duration {
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .episode-duration::before {
+            content: '·';
+            margin-right: 0.4em;
+        }
+
         .episode-number {
             font-size: 1.2rem;
             font-weight: bold;
